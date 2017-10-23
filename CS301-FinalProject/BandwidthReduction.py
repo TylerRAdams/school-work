@@ -1,5 +1,6 @@
 ## We're gonna use Breadth First Search as a heuristic. You pick a vertex, put it to the furthest left, then do a BFS on it. 
 #You then list the order of the vertexes and give the longest length. It's not a perfect algorithm but it works often
+#See readme file for demonstration of code
 from collections import deque
 listOfVertex = []
 reducedListOfVertex = []
