@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Donate to Team Rocket's cause!'">
+  	<meta name="keywords" content="team,rocket,donate,form">
+	<title>Donate!</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/donate.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+See https://www.paulirish.com/2011/the-history-of-the-html5-shiv/ for more info -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type = "text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:'#mobile_menu'});
+	});
+	</script>
+	<audio id = "pokeball"><source src ="sounds/ball.mp3" type="audio/mp3"></audio>
+	<script>
+		var x = document.getElementById("pokeball");
+		function playSound(){
+			x.play();
+		}
+	</script>
+	<script> //Script source: https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock		
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+	<header>
+		<img src="images/Rocket_Banner_Large.png" alt="Team Rocket Banner" usemap="#home">
+        <map name="home">
+          <area shape="rect" coords="8,7,164,194" href="index.html">
+		  <area shape="circle" onclick="playSound()" coords="864,99,20" href="#">
+        </map>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="#">About Us</a>
+			<ul>
+				<li><a href="aboutus.html">Our Members</a></li>
+				<li><a href="action.html">Our Team In Action</a></li>
+			</ul></li>
+        	<li><a href="operation.html">Our Operation</a></li>
+        	<li><a href="join.html">Join Us!</a></li>
+        	<li><a href="donate.html" class="current">Donate</a>
+        	</li>
+   	  </ul>
+</nav>
+	<main>
+		<section>
+			<h1>Donate Your Pokémon To Us!</h1>
+			<img src="images/pikachu.jpg" alt="Pikachu in a cage">
+			<h3>We see you’ve made the choice to hand over your Pokémon rather than have us forcefully take them.
+				 Smart move. When you join up we’ll assign you a new Pokémon.</h3>
+				 
+			<table>
+				<form action="donateCom.html">
+					<tr>
+					<th>Name:</th><td><input type = "text" name="name"></td>
+					</tr>
+					<tr>
+					<th>Hometown:</th> <td><select name="town"> <!-->Select menu for Hometown. Used in other form as well.<-->
+    					<option value="pallet">Pallet Town</option>
+						<option value="viridan">Viridian City</option>
+						<option value="pewter">Pewter City</option>
+						<option value="cerulean">Cerulean City</option>
+						<option value="vermillion">Vermillion City</option>
+						<option value="lavender">Lavender Town</option>
+						<option value="celadon">Celadon City</option>
+						<option value="saffron">Saffron City</option>
+						<option value="fuschia">Fuschia City</option>
+						<option value="cinnabar">Cinnabar Island</option>
+ 					 </select></td>
+					</tr>
+					<tr>
+						<th>Pokémon</th>
+							<td><input type = "text" name="email"></td>
+					</tr>
+					</tr>
+					<tr>
+						<th>Pokémon LVL:</th>
+							<td><input type = "text" name="badges"></td>
+					</tr>
+					<tr>
+						<td>
+							<button type = "submit" value = "Submit">Submit</button>
+						</td>
+						<td>
+							<button type = "reset" value = "Clear">Clear</button>
+						</td>
+					</tr>
+				</form>
+				</table>
+		</section>
+		<aside>
+		</aside>
+	</main>
+		<footer>
+		<p>&copy; Tyler Adams BACS200</p>
+		<p><a href="mailto:adam5491@bears.unco,edu?Subject=Help" target="_top">Contact the Webmaster</a>
+		</p>
+		<p id="date"></p>
+		<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = d.toDateString();
+		</script>
+		<div id="txt"></div>
+	</footer>
+</body>
+</html>

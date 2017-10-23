@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Learn a little about Team Rocket!">
+  	<meta name="keywords" content="team,rocket,home,information,page">
+	<title>Team Rocket Homepage</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+See https://www.paulirish.com/2011/the-history-of-the-html5-shiv/ for more info -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type = "text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:'#mobile_menu'});
+	});
+	</script>
+	<audio id = "pokeball"><source src ="sounds/ball.mp3" type="audio/mp3"></audio>
+	<script>
+		var x = document.getElementById("pokeball");
+		function playSound(){
+			x.play();
+		}
+	</script>
+	<script> //Script source: https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock		
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+	
+	<header> <img src="images/Rocket_Banner_Large.png" alt="Team Rocket Banner" usemap="#home">
+      <map name="home">
+        <area shape="rect" coords="10,5,165,195" href="index.html" alt="">
+        <area shape="circle" onclick="playSound()" coords="864,99,20" href="#">
+      </map>
+</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="#">About Us</a>
+			<ul>
+				<li><a href="aboutus.html">Our Members</a></li>
+				<li><a href="action.html">Our Team In Action</a></li>
+			</ul></li>
+        	<li><a href="operation.html">Our Operation</a></li>
+        	<li><a href="join.html">Join Us!</a></li>
+        	<li><a href="donate.html">Donate</a>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		
+		<h1>We, Team Rocket, are Pokémon Gangsters!</h1>	
+		<section>
+			<img src="images/grunts.png" alt="picture of Rocket Grunts">
+			<p><h3>Welcome to the website of Team Rocket!</h3>We are an international crime syndicate feared throughout the Kanto and Johto regions.
+			We have accomplished many great feats, and have many bases of operation. Here on this website, you can learn about our greatness,
+			donate to our cause, or even submit an application to join us! Why join? Our uniforms are awesome, our Pokémon are fierce, the benefits are great,
+			and one day soon, Team Rocket will take over the world!</p>
+		</section>
+		
+		<aside>
+			<img src = "images/rattata.png" alt = "Picture of Rattata">	
+			<img src = "images/zubat.png" alt = "Picture of Zubat">
+			<h3>We have the best Pokémon.</h3>	
+			<p>Some may claim that they have a Rattata in the "<i>top percentage of Rattatas</i>". Team Rocket laughs at that claim, as our Rattatas,
+			Zubats, Raticates, Golbats, and Grimers can defeat any foe!</p>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; Tyler Adams BACS200</p>
+		<p><a href="mailto:adam5491@bears.unco,edu?Subject=Help" target="_top">Contact the Webmaster</a>
+		</p>
+		<p id="date"></p>
+		<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = d.toDateString();
+		</script>
+		<div id="txt"></div>
+	</footer>
+</body>
+</html>
