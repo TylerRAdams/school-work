@@ -1,7 +1,7 @@
  /***********************************
- * 				Card				*
- * Coded By: Tyler Adams			*
- * 10/10/16							*
+ * Card				    *
+ * Coded By: Tyler Adams	    *
+ * 10/10/16			    *
  ***********************************/
 public class Card {
 	int rank; int suit;
