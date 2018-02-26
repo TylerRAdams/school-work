@@ -30,7 +30,7 @@ public class Restroom {
 		
 		int totalTimeCounter = 0;
 		int departureCounter = 0; //Amount of people who have left the bathroom
-		boolean genderMode = true; //If true, female. If false, male
+		int genderMode = 2; //0 = F, 1 = M, 2 = Empty
 		/**for(int i = 0; i < peopleQueue.size(); i++) {
 			System.out.println(Arrays.toString(peopleQueue.get(i)));
 		}**/
@@ -55,30 +55,31 @@ public class Restroom {
 			//THEN ARRIVE
 			if(activeBathroom.size() < 3) {
 				if(activeBathroom.size() == 0) { //If the bathroom is empty, always take the first person in line
+					genderMode = 2; //Sets the bathroom to empty
 					activeBathroom.add(peopleQueue.get(0));
 					int[] currentPerson = activeBathroom.get(0);
 					if(currentPerson[1] == 0) {
-						genderMode = true;
+						genderMode = 0;
 						System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(F) enters for " + currentPerson[2] + " minutes");
 					}
 					if(currentPerson[1] == 1) {
-						genderMode = false;
+						genderMode = 1;
 						System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(M) enters for " + currentPerson[2] + " minutes");
 					}
 					peopleQueue.remove(0);
 				}
 				for(int i = 0; i < peopleQueue.size(); i++) {
-					if(genderMode == true && activeBathroom.size() < 3) { //Female in bathroom
+					if(genderMode == 0 && activeBathroom.size() < 3) { //Female in bathroom
 						int[] currentPerson = peopleQueue.get(i);
-						if(currentPerson[0] == 0) {
+						if(currentPerson[1] == 0) { //Person is female
 							activeBathroom.add(currentPerson);
 							peopleQueue.remove(i);
 							System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(F) enters for " + currentPerson[2] + " minutes");
 						}
 					}
-					if(genderMode == false && activeBathroom.size() < 3) { //Male im bathroom
+					if(genderMode == 1 && activeBathroom.size() < 3) { //Male in bathroom
 						int[] currentPerson = peopleQueue.get(i);
-						if(currentPerson[0] == 1) {
+						if(currentPerson[1] == 1) { //Person is male
 							activeBathroom.add(currentPerson);
 							peopleQueue.remove(i);
 							System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(M) enters for " + currentPerson[2] + " minutes");
@@ -88,6 +89,7 @@ public class Restroom {
 			}
 			//FINALLY USE FACILITIES
 			activeBathroom = UseFacilities(activeBathroom);
+			
 			totalTimeCounter++;
 		}
 	}
