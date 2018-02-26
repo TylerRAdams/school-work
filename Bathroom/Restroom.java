@@ -1,6 +1,6 @@
 /********************************************************************************* 
  * Bathroom Simulation															 *
- * By Tyler Adams																	 *
+ * By Tyler Adams																 *
  * The only procedure I could fit into its own function was using facilities.    *
  ********************************************************************************/
 
@@ -11,7 +11,7 @@ public class Restroom {
 	public static void main(String[] args) {
 		ArrayList<int[]> peopleQueue = new ArrayList<>(); //People waiting in line
 		ArrayList<int[]> activeBathroom = new ArrayList<>(); //People waiting in the bathroom
-		
+		ArrayList<int[]> peopleToRemove = new ArrayList<>();
 		//GENERATE PEOPLE
 		for(int i = 1; i <= 20; i++) {
 			int g;
@@ -34,28 +34,40 @@ public class Restroom {
 		/**for(int i = 0; i < peopleQueue.size(); i++) {
 			System.out.println(Arrays.toString(peopleQueue.get(i)));
 		}**/
-		while (departureCounter < 19) { //Until 20 people leave the bathroom
+		while (departureCounter < 20) { //Until 20 people leave the bathroom
 			
 			//FIRST DEPART
 			for(int i = 0; i < activeBathroom.size(); i++) {
 				int[]currentPerson = activeBathroom.get(i);
 				if(currentPerson[2] == 0) { //If person is out of time, aka has finished
-					activeBathroom.remove(i); //Remove them from the bathroom
+					peopleToRemove.add(currentPerson); //Remove them from the bathroom
+					departureCounter++; //One person has departed
 					if(currentPerson[1] == 0) { //If current person is female
 						System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(F) exits");
-						departureCounter++; //One person has departed
 					}
 					else if(currentPerson[1] == 1) { //If current person is male
 						System.out.println("Time = " + totalTimeCounter + "; Person " + currentPerson[0] + "(M) exits");
-						departureCounter++; //One person has departed
+					}
+					else {
+						System.out.println("Whoops");
+					}
+				}
+			}
+			for(int i = 0; i < activeBathroom.size(); i++) {
+				for(int j = 0; j < peopleToRemove.size(); j++) {
+					if(activeBathroom.get(i) == peopleToRemove.get(j)) {
+						activeBathroom.remove(i);
+						peopleToRemove.remove(j);
 					}
 				}
 			}
 			
 			//THEN ARRIVE
+			if(peopleQueue.size() != 0) { 
 			if(activeBathroom.size() < 3) {
 				if(activeBathroom.size() == 0) { //If the bathroom is empty, always take the first person in line
 					genderMode = 2; //Sets the bathroom to empty
+					//If there are people left in the queue
 					activeBathroom.add(peopleQueue.get(0));
 					int[] currentPerson = activeBathroom.get(0);
 					if(currentPerson[1] == 0) {
@@ -86,10 +98,10 @@ public class Restroom {
 						}
 					}
 				}
+				}
 			}
 			//FINALLY USE FACILITIES
 			activeBathroom = UseFacilities(activeBathroom);
-			
 			totalTimeCounter++;
 		}
 	}
