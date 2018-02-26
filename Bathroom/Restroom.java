@@ -69,7 +69,7 @@ public class Restroom {
 				}
 				for(int i = 0; i < peopleQueue.size(); i++) {
 					if(genderMode == true && activeBathroom.size() < 3) { //Female in bathroom
-						int[] currentPerson = peopleQueue.get(0);
+						int[] currentPerson = peopleQueue.get(i);
 						if(currentPerson[0] == 0) {
 							activeBathroom.add(currentPerson);
 							peopleQueue.remove(i);
@@ -77,7 +77,7 @@ public class Restroom {
 						}
 					}
 					if(genderMode == false && activeBathroom.size() < 3) { //Male im bathroom
-						int[] currentPerson = peopleQueue.get(0);
+						int[] currentPerson = peopleQueue.get(i);
 						if(currentPerson[0] == 1) {
 							activeBathroom.add(currentPerson);
 							peopleQueue.remove(i);
