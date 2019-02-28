@@ -1,0 +1,5 @@
+C:\Users\Tyler\Documents\Source\Repos\BACS387_FinalProject\FinalProject\Tweetinvi\obj\Debug\Tweetinvi.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\Source\Repos\BACS387_FinalProject\FinalProject\Tweetinvi\obj\Debug\MainWindow.g.cs
+C:\Users\Tyler\Documents\Source\Repos\BACS387_FinalProject\FinalProject\Tweetinvi\obj\Debug\App.g.cs
+C:\Users\Tyler\Documents\Source\Repos\BACS387_FinalProject\FinalProject\Tweetinvi\obj\Debug\Tweetinvi_MarkupCompile.cache
+C:\Users\Tyler\Documents\Source\Repos\BACS387_FinalProject\FinalProject\Tweetinvi\obj\Debug\Tweetinvi_MarkupCompile.lref
