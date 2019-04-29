@@ -1,3 +1,3 @@
-# Website made for a fake organization.
+# Website designed for a fake organization.
 
-Demonstration for website can be found on YouTube:
+Website was designed using a slicknav navigation menu and responsive web design principles.
