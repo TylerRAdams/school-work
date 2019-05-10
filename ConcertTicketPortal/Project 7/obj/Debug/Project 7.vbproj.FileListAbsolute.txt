@@ -1,0 +1,13 @@
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\bin\Debug\Project 7.exe.config
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\bin\Debug\Project 7.exe
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\bin\Debug\Project 7.pdb
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\bin\Debug\Project 7.xml
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project 7.vbprojResolveAssemblyReference.cache
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project_7.Resources.resources
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project 7.vbproj.GenerateResource.Cache
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project 7.exe
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project 7.xml
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project 7.pdb
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project_7.frmSales.resources
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project_7.frmPurchase.resources
+c:\users\tyler\documents\visual studio 2015\Projects\Project 7\Project 7\obj\Debug\Project_7.frmAdmin.resources
