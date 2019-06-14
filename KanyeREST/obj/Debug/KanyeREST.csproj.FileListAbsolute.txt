@@ -1,0 +1,17 @@
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\bin\Debug\KanyeREST.exe.config
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\bin\Debug\KanyeREST.exe
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\bin\Debug\KanyeREST.pdb
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\MainWindow.g.cs
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\App.g.cs
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST_MarkupCompile.cache
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST_MarkupCompile.lref
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\MainWindow.baml
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.g.resources
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.Properties.Resources.resources
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.csproj.GenerateResource.Cache
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.exe
+C:\Users\Tyler\Documents\bacs387_f17_tyler_adams\Adams.Tyler\KanyeREST\obj\Debug\KanyeREST.pdb

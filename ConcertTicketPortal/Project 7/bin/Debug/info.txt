@@ -1,0 +1,8 @@
+Tyler Adams,19,adam5491@bears.unco.edu,1234567890,Tyler Adams,556,325,1,2,1,8564
+Bob,23,bobertson@gmail.com,4443332221,Bob Robertson,412,600,3,1,3,4589
+Oswald Cobblepot,58,penguinos@gmail.com,5421123498541122,Oswald Cobblepot,491,150,0,2,0,1831
+Ash Ketchum,10,m4stercatcher@hotmail.com,4568123909156789,Ash Ketchum,587,150,0,0,3,7732
+Morgan Freeman,79,m_freeman@celebritymail.com,123456789012,Morgan Freeman,409,125,1,0,0,5409
+Scooby Doo,10,snacker@gmail.com,4455128976543809,Scoobert Cornelius Doo,812,50,0,0,1,7158
+Bill Gates,61,b_gates@microsoft.com,1188773291042357,Bill Gates,911,2375,19,0,0,7609
+John Cena,40,cenamazing@wwe.com,4477119982351689,John Cena,490,150,0,2,0,9135
