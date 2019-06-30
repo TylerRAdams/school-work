@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 64c41f778d501cc4eaaed0353c86c4d5
+  - enabled: 1
+    path: Assets/Scenes/Tap-That-Dot.unity
+    guid: fe92bb1a30ce11f48b66cdcdb38fc6e2
+  - enabled: 1
+    path: Assets/Scenes/Level Selection.unity
+    guid: 8ab887644c9f49948b7542c556a848b3
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: 0c75591aa3485eb4980c2074115043cb
+  m_configObjects: {}

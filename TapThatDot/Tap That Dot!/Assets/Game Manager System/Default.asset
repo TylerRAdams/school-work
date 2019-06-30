@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d315a5d9596f241a8fff2d31c8e8a7, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  IsRunning: 0
+  MinSpawnAngle: 30
+  MaxSpawnAngle: 90
+  CurrentMotorSpeed: 50
+  MaxMotorSpeed: 500
+  Countdown: 3
